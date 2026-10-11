@@ -1,11 +1,43 @@
-In recent years, the rapid growth of embedded systems and Internet of Things (IoT) devices has greatly increased cyber threats. Firmware binaries, the essential software controlling hardware operations, are critical parts of these systems. As these ﬁrmware-based devices become more common in various industries,
-ensuring their security has become a top priority for cybersecurity researchers. Firmware binary analysis is crucial for this task. It helps identify vulnerabilities, detect malware, and understand the complex operations of embedded systems. This analysis includes tasks such as reverse-engineering to ﬁnd the ﬁrmware’s
-image base, which is the starting address of the executable ﬁle loaded into memory, and Software Composition Analysis (SCA) to identify embedded third-party libraries (TPL).
+## Reproducibility of Firmware Analysis: An Empirical Study
 
-Growing concerns about ﬁrmware security raise questions about the eﬀectiveness and reproducibility of analysis methods. Reproducibility, in this context, refers to the ability to replicate research results consistently across diﬀerent studies. Firmware analysis is tough because ﬁrmware binaries are complex and work on diﬀerent types of hardware. With ﬁrmware-based devices becoming more
-common in critical infrastructure and various industries, it’s urgent to address vulnerabilities and reduce risks. Independent vulnerability research on ﬁrmware faces challenges like getting data, dealing with encrypted ﬁles, and working with diﬀerent hardware types. Therefore, it’s really important to check if established cybersecurity methods for ﬁrmware analysis can be trusted and repeated reliably. Doing thorough research is key to understanding how well these methods work and keeping up with evolving threats.
+### Background
 
-In response to these challenges, this paper presents an empirical investigation focused on evaluating the reproducibility of speciﬁc cybersecurity methods designed for ﬁrmware analysis. While a recent study [5] has explored various aspects and issues related to reproducibility in ﬁrmware analysis, our goal is to empirically assess the reliability and eﬀectiveness of existing methodologies on accessible ﬁrmware images. We aim to demonstrate that the descriptions of methods provided for ﬁrmware analysis often lack the quality necessary to eﬀectively replicate reported results.
+In recent years, the rapid growth of embedded systems and Internet of Things (IoT) devices has significantly increased cybersecurity threats. Firmware binaries, which contain the essential software controlling hardware operations, are critical components of these systems. As firmware-based devices become increasingly common across industries, ensuring their security has become a major priority for cybersecurity researchers.
 
-To achieve these objectives, we examine a selection of commonly used cybersecurity methods for ﬁrmware binary analysis covering both the challenges of reverse-engineering and SCA. First, to assess reproducibility from an empirical perspective, we conduct careful experimentation and analysis on these methods
-across various ﬁrmware binaries. Next, by evaluating the reproducibility level of the original studies on these methods, we perform a theoretical assessment of reproducibility. The main ﬁndings of this study highlight the challenges and opportunities in reproducibility within the ﬁeld of ﬁrmware analysis, contributing to the ongoing discourse on cybersecurity research methodologies.
+**Firmware binary analysis** plays a crucial role in identifying vulnerabilities, detecting malware, and understanding the complex operations of embedded systems. Key analysis tasks include:
+
+- **Reverse engineering:** Identifying firmware properties, such as the image base—the starting address at which an executable is loaded into memory.
+- **Software Composition Analysis (SCA):** Identifying embedded third-party libraries (TPLs) and other software components.
+
+### Research Problem
+
+Despite the growing importance of firmware security, questions remain about the effectiveness and reproducibility of existing analysis methods. Reproducibility refers to the ability to replicate research results consistently across different studies and experimental environments.
+
+Firmware analysis presents several challenges due to the complexity of firmware binaries and the diversity of hardware architectures. Independent vulnerability research also faces obstacles such as limited data availability, encrypted firmware images, and hardware heterogeneity.
+
+As firmware-based devices become increasingly prevalent in critical infrastructure and other industries, it is essential to evaluate whether established cybersecurity methods can be reliably reproduced and trusted.
+
+### Research Objectives
+
+This paper presents an empirical investigation into the reproducibility of cybersecurity methods designed for firmware binary analysis.
+
+While previous research has explored various reproducibility challenges in firmware analysis, this study focuses on empirically evaluating the reliability and effectiveness of existing methodologies when applied to accessible firmware images.
+
+The study aims to demonstrate that descriptions of firmware analysis methods in existing research often lack sufficient detail and quality to enable the effective replication of reported results.
+
+### Methodology
+
+To investigate these challenges, we examine a selection of commonly used cybersecurity methods for firmware binary analysis, covering both reverse engineering and Software Composition Analysis (SCA).
+
+The study follows two complementary approaches:
+
+1. **Empirical evaluation:** Conducting systematic experiments and analyses using selected methods across various firmware binaries to assess whether the reported results can be reproduced.
+2. **Theoretical evaluation:** Examining the reproducibility of the original studies based on their descriptions of methods, experimental procedures, and reported results.
+
+### Key Findings and Contributions
+
+The findings highlight the challenges and opportunities associated with reproducibility in firmware analysis. The study contributes to the broader discussion of cybersecurity research methodologies by examining the extent to which existing firmware analysis techniques can be independently reproduced.
+
+### Publication
+
+📄 **Read the full paper:** [Reproducibility of Firmware Analysis: An Empirical Study](https://jyx.jyu.fi/bitstreams/c7270281-c4de-4544-b665-1670a133e340/download)
